@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{font-family:Segoe UI;color:#000;margin:0}
+.layout{display:grid;grid-template-columns:0.9fr 2fr;min-height:100vh}
+.left{border-right:2px solid #000;padding:25px}
+.right{padding:25px}
+.name{font-size:28px;font-weight:900}
+.section{font-weight:900;border-bottom:1px solid #000;margin-top:15px}
+</style>
+</head>
+
+<body>
+<div class="layout">
+
+<div class="left">
+<div class="name">{{name}}</div>
+<p>{{contact}}</p>
+
+<div class="section">Skills</div>
+<p>{{skills}}</p>
+</div>
+
+<div class="right">
+<div class="section">Summary</div>
+<p>{{summary}}</p>
+
+<div class="section">Experience</div>
+{{experience}}
+</div>
+
+</div>
+</body>
+</html>
